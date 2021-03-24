@@ -413,7 +413,7 @@ function! s:colors(...)
 
 endfunction
 
-let g:python3_host_prog = "/usr/local/bin/python"
+let g:python3_host_prog = "/Users/ace/anaconda3/bin/python"
 let g:node_host_prog = "/usr/local/bin/neovim-node-host"
 let g:coc_node_path = '/usr/local/bin/node' 
 
