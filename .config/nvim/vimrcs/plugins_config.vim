@@ -455,7 +455,7 @@ command! -bang -nargs=* RG
 command! -nargs=? -complete=dir AF
         \ call fzf#run(fzf#wrap(fzf#vim#with_preview({
         \ 'options': [ '--multi','--info=inline',  '--bind', 'alt-a:select-all,alt-d:deselect-all', ],
-        \   'source': 'fd --type f --hidden --follow --exclude .git .'.expand(<q-args>)
+        \   'source': 'fdfind --type f --hidden --follow --exclude .git .'.expand(<q-args>)
         \ })))
 
 
@@ -490,7 +490,7 @@ nnoremap <m-1> :TODO<CR>
 
 command! -nargs=? -complete=dir ProjectFiles
     \ call fzf#run(fzf#wrap(fzf#vim#with_preview({
-    \   'source': 'fd --type f --hidden --follow --exclude .git . ~/workspace'.expand(<q-args>)
+    \   'source': 'fdfind --type f --hidden --follow --exclude .git . ~/workspace'.expand(<q-args>)
     \ })))
 
 nnoremap <m-!> :ProjectFiles<CR>

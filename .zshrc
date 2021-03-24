@@ -111,14 +111,11 @@ unsetopt share_history
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# This option both imports new commands from the history file, and also causes 
-# your typed commands to be appended to the history file (the latter is like 
-# specifying INC_APPEND_HISTORY).
-unsetopt share_history
+# Load Git completion
+zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+fpath=(~/.zsh $fpath)
 
-alias vim='nvim'
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+autoload -Uz compinit && compinit
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -135,3 +132,16 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+#This option both imports new commands from the history file, and also causes your typed commands to be appended to the history file (the latter is like specifying INC_APPEND_HISTORY).
+unsetopt share_history
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#
+# To use neovim as vim
+alias vim="nvim"
+
+# To use GPG key for github
+export GPG_TTY=$(tty)
+
+set -o vi

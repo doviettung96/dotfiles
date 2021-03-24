@@ -415,7 +415,7 @@ endfunction
 
 let g:python3_host_prog = "$HOME/anaconda3/bin/python"
 let g:node_host_prog = "/usr/local/bin/neovim-node-host"
-let g:coc_node_path = '/usr/local/bin/node' 
+let g:coc_node_path = '/usr/bin/node'
 
 
 function! BreakHere()
