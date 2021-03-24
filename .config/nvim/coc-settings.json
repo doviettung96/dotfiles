@@ -1,0 +1,127 @@
+{
+  "coc.preferences.colorSupport": true,
+  "coc.preferences.hoverTarget": "float",
+  "coc.preferences.useQuickfixForLocations": false,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "python",
+    "css",
+    "markdown",
+    "Markdown",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json"
+  ],
+  "codeLens.enable": true,
+  /* "javascript.validate.enable": false, */
+  "diagnostic.displayByAle": false,
+  "diagnostic.enableSign": true,
+  "diagnostic.messageTarget": "float",
+  "diagnostic.refreshAfterSave": false,
+  "diagnostic.refreshOnInsertMode": true,
+  "diagnostic.virtualText": true,
+  "json.enable": true,
+  "json.format.enable": true,
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "bower.json",
+        ".bower.json"
+      ],
+      "url": "http://schemastore.org/schemas/json/bower"
+    },
+    {
+      "fileMatch": [
+        "tsconfig.json"
+      ],
+      "url": "http://json.schemastore.org/tsconfig"
+    },
+    {
+      "fileMatch": [
+        "package.json"
+      ],
+      "url": "http://json.schemastore.org/package"
+    }
+  ],
+  "python.analysis.logLevel": "Trace",
+  "python.formatting.provider": "black",
+  "python.jediEnabled": true,
+  "python.jediPath": "/usr/local/lib/python3.9/site-packages",
+  /* "python.linting.mypyEnabled": true, */
+  "python.linting.pylintEnabled": true,
+  "signature.enable": true,
+  "signature.target": "float",
+  "tslint.autoFixOnSave": false,
+  "tslint.jsEnable": true,
+  "tslint.suppressWhileTypeErrorsPresent": false,
+  "tsserver.log": "verbose",
+  "tsserver.npm": "/usr/local/bin/npm",
+  "tsserver.trace.server": "verbose",
+  "yaml.completion": true,
+  "yaml.format.bracketSpacing": true,
+  "yaml.format.enable": true,
+  "yaml.format.proseWrap": "always",
+  "yaml.format.singleQuote": true,
+  "yaml.hover": true,
+  "yaml.schemaStore.enable": true,
+  "yaml.validate": true,
+  "yaml.schemas": {
+    "http://json.schemastore.org/circleciconfig": "/.circleci/config.yml",
+    "http://json.schemastore.org/huskyrc": "/.huskyrc.yml",
+    "http://json.schemastore.org/travis": "/.travis.yml",
+    "http://json.schemastore.org/stylelintrc": "/.stylelintrc.yml",
+    "http://json.schemastore.org/eslintrc": "/.eslintrc.yml",
+    "http://json.schemastore.org/gitlab-ci": "/.gitlab-ci.yml",
+    "http://json.schemastore.org/prettierrc": "/.prettierrc.yml",
+    "http://json.schemastore.org/ansible-stable-2.7": "/playbook/**/*.y*ml",
+    "https://raw.githubusercontent.com/docker/compose/master/compose/config/config_schema_compose_spec.json": "docker-compose*.y*ml"
+    /* "kubernetes": "/*.y*ml", */
+  },
+  "diagnostic-languageserver.filetypes": {
+    "zsh": "shellcheck"
+  },
+  "diagnostic-languageserver.formatFiletypes": {
+    "zsh": "shfmt"
+  },
+  "diagnostic-languageserver.formatters": {
+    "shfmt": {
+      "command": "shfmt",
+      "args": [
+        "-i",
+        "2",
+        "-bn",
+        "-ci",
+        "-sr"
+      ]
+    }
+  },
+  "project.enable": false,
+  "docker.enable": true,
+  "languageserver": {},
+  "cSpell.userWords": [
+    "pymongo"
+  ],
+  "yank.enableCompletion": true,
+  "yank.limit": 10,
+  "yank.highlight.duration": 250,
+  "yank.highlight.enable": true,
+  "eslint.enable": true,
+  "eslint.trace.server": "verbose",
+  "eslint.autoFixOnSave": true,
+  "eslint.autoFix": true,
+  "eslint.filetypes": [
+    "typescript",
+    "javascript",
+    "vue"
+  ],
+  "git.enableGutters": false,
+  "git.addedSign.hlGroup": "",
+  "git.changedSign.hlGroup": "",
+  "git.removedSign.hlGroup": "",
+  "git.topRemovedSign.hlGroup": "",
+  "git.changeRemovedSign.htruelGroup": "",
+  "suggest.floatEnable": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "prettier.eslintIntegration": false
+}
