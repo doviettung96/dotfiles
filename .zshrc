@@ -111,6 +111,12 @@ unsetopt share_history
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Load Git completion
+zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+fpath=(~/.zsh $fpath)
+
+autoload -Uz compinit && compinit
+
 # This option both imports new commands from the history file, and also causes 
 # your typed commands to be appended to the history file (the latter is like 
 # specifying INC_APPEND_HISTORY).
@@ -135,3 +141,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+set -o vi
