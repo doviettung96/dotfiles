@@ -1,8 +1,4 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" polyglot
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-let g:polyglot_disabled = ['markdown', 'vue', 'csv']
 
 
 """"""""""""""""""""""""""""""
@@ -97,9 +93,9 @@ Plug 'luochen1990/rainbow' "coloringn the parenthesis
 " Plug 'pearofducks/ansible-vim', { 'do': './UltiSnips/generate.sh' }
 " Plug 'jaxbot/semantic-highlight.vim'
 " Plug 'neoclide/jsonc.vim'
-Plug 'sheerun/vim-polyglot' " for all lang syntax
+" Plug 'sheerun/vim-polyglot' " for all lang syntax
 " Plug 'styled-components/vim-styled-components', { 'branch': 'main' } " for css lib
-
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Plug 'osyo-manga/vim-brightest'
 
 "Plug 'liuchengxu/vista.vim'
@@ -253,7 +249,7 @@ let g:coc_global_extensions = [
             \ 'coc-highlight',
             \ 'coc-json',
             \ 'coc-project',
-            \ 'coc-python',
+            \ 'coc-pyright',
             \ 'coc-snippets',
             \ 'coc-yaml',
             \ 'coc-yank',
